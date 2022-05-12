@@ -12,6 +12,16 @@ It is an address book application, using protocol buffers for the language/platf
 
 You can see the address book representation in `pb/addressbook.proto`.
 
+## Prerequisites
+
+Install the protocol buffer compiler in your system following the [Protocol Buffer Compiler Installation Guide](https://grpc.io/docs/protoc-installation/).
+
+Install the protocol buffer compiler plugin for Go:
+
+```bash
+go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
+```
+
 ## Build Project
 
 To build the project use the `Makefile` that will compile the `.proto` file to a Go source file, and the command line applications:
@@ -36,6 +46,7 @@ To list all people in the address book, run with the book name as the 1st argume
 
 ## Links
 
+- [Protocol Buffer Compiler Installation Guide](https://grpc.io/docs/protoc-installation/)
 - [Download Protocol Buffers](https://developers.google.com/protocol-buffers/docs/downloads)
 - [Protocol Buffer Basics: Go](https://developers.google.com/protocol-buffers/docs/gotutorial)
 - [Protocol Buffers Examples Repository](https://github.com/protocolbuffers/protobuf/tree/main/examples)
